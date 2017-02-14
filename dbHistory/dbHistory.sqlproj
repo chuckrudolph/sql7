@@ -57,5 +57,52 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="sqlExaminer" />
+    <Folder Include="sqlExaminer\Database Level Objects" />
+    <Folder Include="sqlExaminer\Database Level Objects\Database Options" />
+    <Folder Include="sqlExaminer\Database Level Objects\Service Broker" />
+    <Folder Include="sqlExaminer\Database Level Objects\Service Broker\Routes" />
+    <Folder Include="sqlExaminer\Schemas" />
+    <Folder Include="sqlExaminer\Schemas\dbo" />
+    <Folder Include="sqlExaminer\Schemas\dbo\Tables" />
+    <Folder Include="sqlExaminer\Schemas\dbo\Tables\Constraints" />
+    <Folder Include="sqlExaminer\Schemas\dbo\Tables\Keys" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="sqlExaminer\Database Level Objects\Database Options\ANSI NULL Default.databaseoption.sql" />
+    <Build Include="sqlExaminer\Database Level Objects\Database Options\ANSI NULLS Enabled.databaseoption.sql" />
+    <Build Include="sqlExaminer\Database Level Objects\Database Options\ANSI Padding Enabled.databaseoption.sql" />
+    <Build Include="sqlExaminer\Database Level Objects\Database Options\ANSI Warnings.databaseoption.sql" />
+    <Build Include="sqlExaminer\Database Level Objects\Database Options\Arithmetic Abort Enabled.databaseoption.sql" />
+    <Build Include="sqlExaminer\Database Level Objects\Database Options\Auto Close.databaseoption.sql" />
+    <Build Include="sqlExaminer\Database Level Objects\Database Options\Auto Create Statistics.databaseoption.sql" />
+    <Build Include="sqlExaminer\Database Level Objects\Database Options\Auto Shrink.databaseoption.sql" />
+    <Build Include="sqlExaminer\Database Level Objects\Database Options\Auto Update Statistics Asynchronously.databaseoption.sql" />
+    <Build Include="sqlExaminer\Database Level Objects\Database Options\Auto Update Statistics.databaseoption.sql" />
+    <Build Include="sqlExaminer\Database Level Objects\Database Options\Broker Enabled.databaseoption.sql" />
+    <Build Include="sqlExaminer\Database Level Objects\Database Options\Collation.databaseoption.sql" />
+    <Build Include="sqlExaminer\Database Level Objects\Database Options\Compatibility level.databaseoption.sql" />
+    <Build Include="sqlExaminer\Database Level Objects\Database Options\Concatenate Null Yields Null.databaseoption.sql" />
+    <Build Include="sqlExaminer\Database Level Objects\Database Options\Containment.databaseoption.sql" />
+    <Build Include="sqlExaminer\Database Level Objects\Database Options\Cursor Close on Commit Enabled.databaseoption.sql" />
+    <Build Include="sqlExaminer\Database Level Objects\Database Options\Database Chaining.databaseoption.sql" />
+    <Build Include="sqlExaminer\Database Level Objects\Database Options\Database Read-Only.databaseoption.sql" />
+    <Build Include="sqlExaminer\Database Level Objects\Database Options\Date Correlation Optimization Enabled.databaseoption.sql" />
+    <Build Include="sqlExaminer\Database Level Objects\Database Options\Default Cursor.databaseoption.sql" />
+    <Build Include="sqlExaminer\Database Level Objects\Database Options\Full-Text Enabled.databaseoption.sql" />
+    <Build Include="sqlExaminer\Database Level Objects\Database Options\Numeric Round-Abort.databaseoption.sql" />
+    <Build Include="sqlExaminer\Database Level Objects\Database Options\Page verify.databaseoption.sql" />
+    <Build Include="sqlExaminer\Database Level Objects\Database Options\Parameterization.databaseoption.sql" />
+    <Build Include="sqlExaminer\Database Level Objects\Database Options\Quoted Identifiers Enabled.databaseoption.sql" />
+    <Build Include="sqlExaminer\Database Level Objects\Database Options\Read Committed Snapshot.databaseoption.sql" />
+    <Build Include="sqlExaminer\Database Level Objects\Database Options\Recovery model.databaseoption.sql" />
+    <Build Include="sqlExaminer\Database Level Objects\Database Options\Recursive Triggers Enabled.databaseoption.sql" />
+    <Build Include="sqlExaminer\Database Level Objects\Database Options\Restrict Access.databaseoption.sql" />
+    <Build Include="sqlExaminer\Database Level Objects\Database Options\Snapshot Isolation State.databaseoption.sql" />
+    <Build Include="sqlExaminer\Database Level Objects\Database Options\Trustworthy.databaseoption.sql" />
+    <Build Include="sqlExaminer\Database Level Objects\Service Broker\Routes\AutoCreatedLocal.route.sql" />
+    <Build Include="sqlExaminer\Schemas\dbo\Tables\Constraints\dbo.test.DF_test_dateStampUtc.defconst.sql" />
+    <Build Include="sqlExaminer\Schemas\dbo\Tables\Keys\dbo.test.PK_test.pkey.sql" />
+    <Build Include="sqlExaminer\Schemas\dbo\Tables\dbo.test.table.sql" />
   </ItemGroup>
 </Project>
